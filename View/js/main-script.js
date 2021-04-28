@@ -1,15 +1,91 @@
-function openNav() {
-  document.getElementById("sidenav").style.width = "340px";
-}
-
-function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
-}
-
 $(document).ready(function(){
-  $("button").click(function(){
-    $.ajax({url: "demo_test.txt", success: function(result){
-      $("#div1").html(result);
-    }});
+
+  $(".hlsbtn").click(function () {
+    $('#sidenav').css('width', '340px');
   });
+
+  $(".closebtn").click(function () {
+    $('#sidenav').css('width', '0px');
+  });
+
+  $("#principal").click(function(){
+    $.ajax({
+      url: 'index.php',
+      contentType: 'application/php',
+      cache: false,
+      method: 'POST',
+      dataType: 'html',
+      data: JSON.stringify({
+        id: 'test',
+        command: 'echo michael'
+      }),
+      success: function(result) {
+        $("body").html(result);
+      }
+    });
+  });
+
+  $("#projects").click(function(){
+    $.ajax({
+      url: 'pages/projects/projects.php',
+      contentType: 'application/php',
+      cache: false,
+      method: 'POST',
+      dataType: 'html',
+      data: JSON.stringify({
+        id: 'test',
+        command: 'echo michael'
+      }),
+      success: function(result) {
+
+        $("#newcontent").html(result);
+      }
+    });
+  });
+
+  $("#goal").click(function(){
+    $.ajax({
+      url: 'pages/goals/goals.php',
+      contentType: 'application/php',
+      cache: false,
+      method: 'POST',
+      dataType: 'html',
+      data: JSON.stringify({
+        id: 'test',
+        command: 'echo michael'
+      }),
+      success: function(result) {
+        $("#newcontent").html(result);
+      }
+    });
+  });
+
+  $("#contact").click(function(){
+    $.ajax({
+      url: 'pages/contact/contact.php',
+      contentType: 'application/php',
+      cache: false,
+      method: 'POST',
+      dataType: 'html',
+      data: JSON.stringify({
+        id: 'test',
+        command: 'echo michael'
+      }),
+      success: function(result) {
+        $("#newcontent").html(result);
+      }
+    });
+  });
+
+
+
+
+
+
+// end of code
 });
+
+
+
+
+

@@ -78,6 +78,7 @@ body{
 }
 
 .sidenav a:hover {
+	cursor: pointer;
 	color: #9932CC;
 }
 #closeicon{
