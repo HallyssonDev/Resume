@@ -43,9 +43,9 @@ $(document).ready(function(){
     });
   });
 
-  $("#goal").click(function(){
+  $("#aboutme").click(function(){
     $.ajax({
-      url: 'pages/goals/goals.php',
+      url: 'pages/aboutme/aboutme.php',
       contentType: 'application/php',
       cache: false,
       method: 'POST',
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
   $("#contact").click(function(){
     $.ajax({
-      url: 'pages/contact/contact.php',
+      url: 'pages/contact/index.php',
       contentType: 'application/php',
       cache: false,
       method: 'POST',
