@@ -23,7 +23,7 @@
 		<a href="javascript:void(0)" class="closebtn" id="closeicon">&times;</a>
 		<a id="principal"><i class="user icon"></i>Principal</a>
 		<a id="projects"><i class="folder icon"></i>Projetos</a>
-		<a id="goal"><i class="certificate icon"></i>Objetivo</a>
+		<a id="aboutme"><i class="certificate icon"></i>Sobre mim</a>
 		<a id="contact"><i class="phone icon"></i>Contato</a>
 		<a id="info" id="info"><i class="info icon"></i>Info</a><!-- Modal -->
 	</div>
