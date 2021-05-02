@@ -1,10 +1,17 @@
+@font-face{
+	font-family: 'neon';
+	src: url(../font/neon.otf);
+}
+
 body{
+	margin: 0;
+	padding: 0;
 	background-color: #0c0c0c;
 	overflow-x: hidden;
 }
 
 .hlsparallax{
-	background-image: url("../background/program.jpg");
+	background-image: url("../background/city.jpg");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -14,20 +21,32 @@ body{
 
 
 .hlsparallax h1{
-	position: absolute;
-	top: 20%;
-	margin: 0 auto;
-	width: 100%;
-	color: white;
-	font-size: 45px;
-	text-align: center;
-	font-family: 'Verdana';
-	padding: 20px;
+	font-family: 'neon';
+	position: relative;
+	top:250px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0 20px;
+	font-size: 5em;
+	color: #fff;
+	animation: lblink 3 s infinite;
 }
+
+.neon:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: -1;
+	color: #9932CC; 
+	animation: makeblur 7s infinite;
+}
+
 
 .hlsbtn{
 	position: fixed;
-	top: 80%;
+	top: 60%;
 	height: 65px;
 	width: 60px;
 	border-style: hidden;
@@ -39,6 +58,7 @@ body{
 	color: white;
 	animation: buttonani 7s infinite;
 }
+
 .hlsbtn:hover{
 	cursor: pointer;
 }
@@ -93,28 +113,113 @@ body{
 	margin-left: 50px;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+.footer{
+	margin: 0;
+	background-color: #9932CC;
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	column-count: 2;
+}
 
+.footer .footer-content{
+	position: relative;
+	left: 80%;
+	margin-left: 50px;
+}
+
+.contactme{
+	background-color: white;
+	padding: 10px;
+	border-style: hidden;
+	height: auto;
+	width: auto;
+	color: black;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	float: right;
+	margin: 0;
+}
+
+.contactme .angle.big.up.icon:hover{
+	cursor: pointer;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.contactme button{
+	position: relative;
+	left: 30%;
+}
+
+.contactme div{
+	margin: 10px;
+}
+
+
+::-webkit-scrollbar {
+	width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #000; 
+	background: #000; 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9932CC; 
-  border-radius: 10px;
+	background: grey; 
+	border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+	background: #555; 
 }
 
 
+/*Animations*/
+
+@keyframes lblink{
+	0%{
+		opacity: 1;
+	}
+
+	40%{
+		opacity: 0.9;
+	}
+
+	70%{
+		opacity: 1;
+	}
+
+	80%{
+		opacity: 0.9;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+
+@keyframes makeblur{
+	0%{
+		filter: blur(0px);
+	}
+	50%{
+		filter: blur(10px);
+	}
+	100%{
+		filter: blur(0px);
+	}
+}
 
 
 /*Pulse button animation*/
