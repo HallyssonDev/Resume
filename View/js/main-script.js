@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  
   $(".hlsbtn").click(function () {
     $('#sidenav').css('width', '340px');
   });
@@ -60,26 +60,8 @@ $(document).ready(function(){
     });
   });
 
-  $("#contact").click(function(){
-    $.ajax({
-      url: 'pages/contact/index.php',
-      contentType: 'application/php',
-      cache: false,
-      method: 'POST',
-      dataType: 'html',
-      data: JSON.stringify({
-        id: 'test',
-        command: 'echo michael'
-      }),
-      success: function(result) {
-        $("#newcontent").html(result);
-      }
-    });
-  });
 
-
-
-
+  
 
 
 // end of code
