@@ -42,8 +42,8 @@ class EmailMessage{
 			$mail->isSMTP();
 			$mail->Host = 'smtp.gmail.com';
 			$mail->SMTPAuth = true;
-			$mail->Username = 'hallyssonribeiro2001@gmail.com';
-			$mail->Password = 'hally123';
+			$mail->Username = '';
+			$mail->Password = '';
 			$mail->Port = 587;
 
 			$mail->setFrom($this->strange_email); //quem envia
