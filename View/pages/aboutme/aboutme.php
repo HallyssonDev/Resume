@@ -31,9 +31,9 @@
 </style>
 <body>
 	<section class="main-content">
-		<h2><i class="right angle icon"></i>Sobre mim</h2>
-		<p>Programo por diversão e aprendizado.</p>
-		<p>Logo abaixo são algumas tecnologias que gosto de utilizar</p>
+		<h2><i class="right angle icon"></i>Um pouco sobre</h2>
+		<p>Estou sempre buscando o aperfeiçoamento profissional e pessoal.</p>
+		<p>Logo abaixo são algumas tecnologias que gosto de utilizar:</p>
 	</section>
 
 	<table>
