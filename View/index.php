@@ -31,8 +31,7 @@ if (isset($_POST['btn'])) {
 		<a href="javascript:void(0)" class="closebtn" id="closeicon">&times;</a>
 		<a id="principal"><i class="user icon"></i>Principal</a>
 		<a id="projects"><i class="folder icon"></i>Projetos</a>
-		<a id="aboutme"><i class="certificate icon"></i>Sobre mim</a>
-		<a id="info" id="info"><i class="info icon"></i>Info</a><!-- Modal -->
+		<a id="aboutme"><i class="certificate icon"></i>Sobre</a>
 	</div>
 
 	<section class="main-content">
